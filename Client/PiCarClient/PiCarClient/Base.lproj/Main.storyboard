@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.1.140" borderStyle="roundedRect" placeholder="Remote IP Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ybj-hI-0dR">
+                                <rect key="frame" x="60" y="66" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7aS-mr-DJF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8088" borderStyle="roundedRect" placeholder="Port" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B5f-sq-QDZ">
+                                <rect key="frame" x="60" y="111" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOR-at-zeC">
+                                <rect key="frame" x="116" y="206" width="88" height="30"/>
+                                <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="connectButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A90-js-5j4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtd-Oi-gnf">
+                                <rect key="frame" x="60" y="334" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="v7D-CD-A8c"/>
+                                </constraints>
+                                <state key="normal" title="RIGHT"/>
+                                <connections>
+                                    <action selector="rightButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uol-ie-CHL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AA-lM-ghP">
+                                <rect key="frame" x="214" y="334" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Clf-gn-8lp"/>
+                                </constraints>
+                                <state key="normal" title="LEFT"/>
+                                <connections>
+                                    <action selector="leftButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fsS-dL-4BS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0K1-Uo-xgB">
+                                <rect key="frame" x="127" y="381" width="67" height="30"/>
+                                <state key="normal" title="DOWN"/>
+                                <connections>
+                                    <action selector="downButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fe7-EF-A0V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdI-uM-2kq">
+                                <rect key="frame" x="137" y="276" width="46" height="30"/>
+                                <state key="normal" title="UP"/>
+                                <connections>
+                                    <action selector="upButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qP6-bg-arx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qtd-Oi-gnf" firstAttribute="leading" secondItem="B5f-sq-QDZ" secondAttribute="leading" id="70r-Xs-u4W"/>
+                            <constraint firstItem="Ybj-hI-0dR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="9hR-Wo-k4w"/>
+                            <constraint firstItem="Ybj-hI-0dR" firstAttribute="centerX" secondItem="JdI-uM-2kq" secondAttribute="centerX" id="KSX-JU-MTy"/>
+                            <constraint firstItem="7AA-lM-ghP" firstAttribute="trailing" secondItem="B5f-sq-QDZ" secondAttribute="trailing" id="RTX-dm-GRy"/>
+                            <constraint firstItem="Ybj-hI-0dR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rki-rB-G2C"/>
+                            <constraint firstItem="Qtd-Oi-gnf" firstAttribute="baseline" secondItem="7AA-lM-ghP" secondAttribute="baseline" id="TH6-el-dyH"/>
+                            <constraint firstItem="Ybj-hI-0dR" firstAttribute="trailing" secondItem="B5f-sq-QDZ" secondAttribute="trailing" id="Yvd-d8-aCj"/>
+                            <constraint firstItem="B5f-sq-QDZ" firstAttribute="top" secondItem="Ybj-hI-0dR" secondAttribute="bottom" constant="15" id="iOD-m2-IPx"/>
+                            <constraint firstItem="Ybj-hI-0dR" firstAttribute="leading" secondItem="B5f-sq-QDZ" secondAttribute="leading" id="lLE-ij-4Mh"/>
+                            <constraint firstItem="Ybj-hI-0dR" firstAttribute="centerX" secondItem="TOR-at-zeC" secondAttribute="centerX" id="oTf-CO-eXU"/>
+                            <constraint firstItem="Ybj-hI-0dR" firstAttribute="centerX" secondItem="0K1-Uo-xgB" secondAttribute="centerX" id="w4T-mo-1KF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="portTextField" destination="B5f-sq-QDZ" id="cva-El-Q3T"/>
+                        <outlet property="remoteIPTextField" destination="Ybj-hI-0dR" id="P4v-YS-2x1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.33333333333334" y="324.70666666666665"/>
+        </scene>
+    </scenes>
+</document>
